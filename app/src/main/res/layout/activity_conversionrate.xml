@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/line_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_text_view_width"
+                android:background="#FFFFFF"
+                android:text="昨日转化率曲线图"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="#333333"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/text_size_15"
+                android:layout_marginBottom="1dp"
+                />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="#FFFFFF"
+                android:scrollbars="none"
+                android:layout_marginBottom="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/lineChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_text_view_width"
+            android:background="#FFFFFF"
+            android:text="单件商品转化率"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/text_size_15"
+            android:layout_marginBottom="1dp"
+            />
+
+        <com.weisj.fx.view.MyListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:background="#FFFFFF"
+            ></com.weisj.fx.view.MyListView>
+    </LinearLayout>
+
+</ScrollView>

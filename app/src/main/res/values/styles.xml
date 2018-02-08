@@ -1,0 +1,150 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="head_home_recommend_text_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="head_home_recommend_text_price">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:background">@drawable/circle_color_b7ce2a</item>
+    </style>
+
+    <style name="head_coupon_choose_category_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/coupon_textcolor_selector</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:drawableBottom">@drawable/order_bottom_selector</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/click_background</item>
+    </style>
+
+    <style name="choose_good_linear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="choose_good_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/coupon_textcolor_selector</item>
+    </style>
+
+    <style name="distribution_commission_bar">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/distribution_commission_textcolor_selector</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:drawableBottom">@drawable/order_bottom_selector</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">@drawable/click_background</item>
+    </style>
+
+    <!-- 头像选择弹窗样式 -->
+    <style name="mystyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/edit_fade_in</item>
+        <!-- //退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/edit_fade_out</item>
+        <!-- 窗口背景色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 窗口是否半透明——是（与第一条配合使 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 这个不设置的话，可能会出现边框黑 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 是否允许背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 头像选择弹窗样式 -->
+    <style name="mystyle2" parent="@android:style/Theme.Dialog">
+
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/edit_fade_in2</item>
+        <!-- //退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/edit_fade_out2</item>
+        <!-- 窗口背景色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 窗口是否半透明——是（与第一条配合使 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 这个不设置的话，可能会出现边框黑 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 是否允许背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+</resources>

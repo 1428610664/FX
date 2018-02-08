@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/bill_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="14dp"
+                />
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/bill_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/bill_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/bill_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bill_pic"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#999999"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="13dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bill_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bill_pic"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/bill_name"
+                    android:textColor="#9E6E59"
+                    android:textSize="12dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/bill_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/bill_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9E6E59"
+                android:layout_above="@+id/bill_time"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/bill_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#666666"
+                android:layout_alignParentBottom="true"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"
+        />
+</LinearLayout>

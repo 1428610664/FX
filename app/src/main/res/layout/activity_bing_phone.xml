@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bing_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.weisj.fx.activity.BingPhoneActivity">
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.weisj.fx.view.ClearEditText
+            android:id="@+id/staff_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/hui_yuanjiao2"
+            android:gravity="center_vertical"
+            android:hint="验证码"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#aaaaaa"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:id="@+id/show_staff"
+            android:paddingRight="10dp"
+            android:background="@drawable/staff_background"
+            android:text="发送验证码"
+            android:textColor="@color/colorHome"
+            />
+
+    </LinearLayout>
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/user_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:gravity="center_vertical"
+        android:hint="请输入绑定帐号"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:gravity="center_vertical"
+        android:hint="请输入登录密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/bingBt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rolegold_yuanjiao"
+        android:text="绑定"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_fx" default="compile.module.fx">
+  <dirname property="module.fx.basedir" file="${ant.file.module_fx}"/>
+  
+  <property name="module.jdk.home.fx" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.fx" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.fx" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.fx" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="fx.output.dir" value="${module.fx.basedir}/build/classes/production/FX"/>
+  <property name="fx.testoutput.dir" value="${module.fx.basedir}/build/classes/test/FX"/>
+  
+  <path id="fx.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="fx.module.production.classpath"/>
+  
+  <path id="fx.runtime.production.module.classpath">
+    <pathelement location="${fx.output.dir}"/>
+  </path>
+  
+  <path id="fx.module.classpath">
+    <pathelement location="${fx.output.dir}"/>
+  </path>
+  
+  <path id="fx.runtime.module.classpath">
+    <pathelement location="${fx.testoutput.dir}"/>
+    <pathelement location="${fx.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.fx">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.fx">
+    <patternset refid="excluded.from.module.fx"/>
+  </patternset>
+  
+  
+  <target name="compile.module.fx" depends="compile.module.fx.production,compile.module.fx.tests" description="Compile module FX"/>
+  
+  <target name="compile.module.fx.production" depends="register.custom.compilers" description="Compile module FX; production classes"/>
+  
+  <target name="compile.module.fx.tests" depends="register.custom.compilers,compile.module.fx.production" description="compile module FX; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.fx" description="cleanup module">
+    <delete dir="${fx.output.dir}"/>
+    <delete dir="${fx.testoutput.dir}"/>
+  </target>
+</project>

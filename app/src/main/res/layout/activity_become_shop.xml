@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colore6e6e6"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/colorf8f8f8"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="当前位置"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:id="@+id/city_linear"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:id="@+id/shop_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="深圳"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/text_size_17" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:src="@mipmap/icon_become_shop_jt"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/jiaobanyuan_bai"
+                android:hint="商户名称"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/color333333"
+                android:textColorHint="@color/color999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/shop_tel"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/jiaobanyuan_bai"
+                android:hint="联系电话"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/color333333"
+                android:textColorHint="@color/color999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/shop_main_product"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/jiaobanyuan_bai"
+                android:gravity="top"
+                android:hint="请填写您的主营产品类型"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/color333333"
+                android:textColorHint="@color/color999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="添加图片"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/shop_submit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bt_color_b7ce2a"
+                android:text="提交"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_18" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

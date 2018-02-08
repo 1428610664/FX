@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/root_head_title_height"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册账号"
+            android:textColor="@color/colorHome"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/register_finish"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="14dp"
+            android:src="@mipmap/icon_finish" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

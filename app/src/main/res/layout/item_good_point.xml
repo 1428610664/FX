@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/point_name"
+            android:text="ssss"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/color666666"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:id="@+id/point_time"
+            android:text="10-30 13:44"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/color666666"/>
+    </LinearLayout>
+
+    <com.weisj.fx.view.MyRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/point_bar"></com.weisj.fx.view.MyRatingBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="@color/color333333"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/point_content"
+        android:textSize="14dp"/>
+
+    <com.weisj.fx.view.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/recyclerView"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

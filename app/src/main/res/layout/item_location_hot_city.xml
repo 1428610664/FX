@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:background="@drawable/location_hot_city_background"
+        android:gravity="center"
+        android:text="上海"
+        android:id="@+id/location_text"
+        android:textColor="@color/colorHome"
+        android:textSize="@dimen/text_size_13" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#f44341"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/good_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fruit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/good_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:singleLine="true"
+                android:text="金一饰界"
+                android:textColor="@color/color666666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/good_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="深圳特产水果"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="￥98.00"
+                android:textColor="@color/colorfbb100"
+                android:textSize="@dimen/text_size_13" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/good_bt"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bt_color_cccccc"
+                    android:gravity="center"
+                    android:text="找相似"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/color999999" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

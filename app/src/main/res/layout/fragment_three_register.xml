@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请设置登录密码并确认密码"
+            android:textColor="#666666"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:gravity="center_vertical"
+        android:hint="请输入6-12位登录密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/confirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:gravity="center_vertical"
+        android:hint="请再次输入登录密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/nextBt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rolegold_yuanjiao"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:background="#e6e6e6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/consignee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纱布"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/consignee_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:text="13555555555"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/consignee_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="广东省深圳市福田撒犯得上发射点发生士大夫"
+            android:textColor="#999999"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="0.5dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/consignee_choose"
+            android:layout_width="14dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/consignee_default_address_image_selector"
+            android:layout_height="14dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设为默认地址"
+            android:textSize="12dp"
+            android:layout_marginLeft="7dp"
+            android:textColor="#999999"/>
+
+        <Button
+            android:layout_width="54dp"
+            android:layout_height="22dp"
+            android:background="@drawable/consignee_edit_background"
+            android:text="编辑"
+            android:id="@+id/consignee_edit"
+            android:textSize="12dp"
+            android:textColor="#666666"/>
+        <Button
+            android:layout_width="54dp"
+            android:layout_height="22dp"
+            android:background="@drawable/consignee_delete_background"
+            android:text="删除"
+            android:id="@+id/consignee_delete"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="#86a127"/>
+    </LinearLayout>
+
+</LinearLayout>

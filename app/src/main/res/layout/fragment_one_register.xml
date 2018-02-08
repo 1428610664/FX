@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入手机号，便可获取短信验证码"
+            android:textColor="#666666"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:digits="1234567890"
+        android:gravity="center_vertical"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+    <com.weisj.fx.view.ClearEditText
+        android:id="@+id/staff_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:digits="1234567890"
+        android:gravity="center_vertical"
+        android:hint="证件号码"
+        android:inputType="phone"
+        android:maxLength="8"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/staff_city"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hui_yuanjiao"
+        android:gravity="center_vertical"
+        android:hint="所在地区"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/nextBt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rolegold_yuanjiao"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="用户注册协议"
+        android:id="@+id/user_protocol"
+        android:textColor="#ff0000"
+        android:textSize="12dp" />
+
+
+</LinearLayout>

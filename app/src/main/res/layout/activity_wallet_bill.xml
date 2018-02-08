@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/root_head_title_image_size">
+
+            <ImageView
+                android:id="@+id/root_head_back"
+                android:layout_width="@dimen/root_head_title_image_size"
+                android:layout_height="@dimen/root_head_title_image_size"
+                android:padding="@dimen/root_head_title_image_padding"
+                android:src="@mipmap/icon_back" />
+
+
+            <LinearLayout
+                android:id="@+id/date_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                >
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015年1月"
+                    android:textColor="@color/colorHome"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="▼"
+                    android:textColor="@color/colorHome"
+                    />
+
+            </LinearLayout>
+
+
+
+           <!-- <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_what" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B3B3B3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#e6e6e6"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="支出"
+                    android:id="@+id/my_collection_good"
+                    android:textColor="#cc8d71"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/my_collection_linear_good"
+                    android:layout_width="70dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#cc8d71"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="收入"
+                android:id="@+id/my_collection_brand"
+                android:textColor="@drawable/collection_text_color_selector"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/my_collection_linear"
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cc8d71"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8"
+        >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#E6E6E6"
+    android:layout_height="match_parent">
+
+
+
+    
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="75dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="5dp"
+            android:text="充值金额"
+            />
+
+        <com.weisj.fx.view.ClearEditText
+            android:id="@+id/recharge_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:textSize="30dp"
+            android:textColor="#333333"
+            android:hint="0.0"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="50dp"
+        android:background="#E6E6E6"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式:"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#555555"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/wc_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+        <CheckBox
+            android:id="@+id/wechat_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/checkbox_selector"
+            android:checked="true"
+            android:clickable="false"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/zf_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+        <CheckBox
+            android:id="@+id/zhifu_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/checkbox_selector"
+            android:checked="false"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            />
+            </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:alpha="0.5"
+        android:background="@drawable/rolegold_yuanjiao"
+        android:text="充值"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:id="@+id/coupon_linear_1"
+        android:background="@mipmap/coupon_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <com.weisj.fx.view.CircleImageView
+                android:id="@+id/coupon_image"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="12.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/coupon_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元优惠券"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/coupon_brand_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/coupon_bt"
+                android:layout_width="71dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="8.5dp"
+                android:background="@drawable/bt_color_b7ce2a"
+                android:gravity="center"
+                android:text="我要分享"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_10"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coupon_linear"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@mipmap/coupon_background"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <com.weisj.fx.view.CircleImageView
+                android:id="@+id/coupon_image1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="12.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/coupon_money1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元优惠券"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/coupon_brand_name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/coupon_bt1"
+                android:layout_width="71dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="8.5dp"
+                android:background="@drawable/bt_color_b7ce2a"
+                android:gravity="center"
+                android:text="我要分享"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_10"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="1px"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/umeng_socialize_share_music"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/text_size_10"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_16"
+                android:text="柠檬奶茶"
+                android:singleLine="true"
+                android:ellipsize="end"
+
+                />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_14"
+                android:text="深圳特产柠檬"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffb100"
+                android:textSize="@dimen/text_size_14"
+                android:layout_marginTop="2dp"
+                android:text="￥ 98.0"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转化率:"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#999999"
+            />
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.2%"
+                android:textColor="#ffb100"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_size_14"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/jiaobanyuan_bai"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="申请成功"
+            android:layout_marginBottom="15dp"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:lineSpacingExtra="3dp"
+            android:text="请牢记您的用户名和密码 ，我们审核通过后会在3个工作日内把产品配送到您的手中，请到首页查看申领进度。"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:background="#ffffff"
+            android:digits="1234567890abcdefghijklnmopqrstuvwxyz"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:visibility="gone"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#808080"
+            android:textColorHint="#808080"
+            android:textSize="14dp" />
+
+        <!-- 在LinearLayout中加按钮 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#f0f0f0" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="取消"
+                android:textSize="15dp"
+                android:textColor="#ff7e00" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/view"
+                android:background="#f0f0f0" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="确定"
+                android:textSize="15dp"
+                android:textColor="#ff7e00" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 底部椭园边缘 -->
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="fx" default="all">
+  
+  
+  <property file="fx.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.ear"/>
+    <include name="*.egg"/>
+    <include name="*.ane"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="project.jdk.home" value=""/>
+  <property name="project.jdk.bin" value=""/>
+  <property name="project.jdk.classpath" value=""/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.appcompat-v7-23.1.1.classpath">
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res"/>
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.com.umeng.message.lib_v2.6.0.classpath">
+    <pathelement location="${basedir}/app/libs/com.umeng.message.lib_v2.6.0.jar"/>
+  </path>
+  
+  <path id="library.core-3.2.1.classpath">
+    <pathelement location="${idea.home}/gradle/gradle-2.4/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"/>
+  </path>
+  
+  <path id="library.design-23.1.1.classpath">
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res"/>
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.gson-2.7.classpath">
+    <pathelement location="${idea.home}/gradle/gradle-2.4/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"/>
+  </path>
+  
+  <path id="library.library-2.4.0.classpath">
+    <pathelement location="${idea.home}/gradle/gradle-2.4/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"/>
+  </path>
+  
+  <path id="library.mta-sdk-1.6.2.classpath">
+    <pathelement location="${basedir}/app/libs/mta-sdk-1.6.2.jar"/>
+  </path>
+  
+  <path id="library.okhttp-2.7.5.classpath">
+    <pathelement location="${idea.home}/gradle/gradle-2.4/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.5/7a15a7db50f86c4b64aa3367424a60e3a325b8f1/okhttp-2.7.5.jar"/>
+  </path>
+  
+  <path id="library.okio-1.8.0.classpath">
+    <pathelement location="${idea.home}/gradle/gradle-2.4/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"/>
+  </path>
+  
+  <path id="library.open_sdk_r5756.classpath">
+    <pathelement location="${basedir}/app/libs/open_sdk_r5756.jar"/>
+  </path>
+  
+  <path id="library.recyclerview-v7-23.1.1.classpath">
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res"/>
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.socialsdk_qqzone_3.classpath">
+    <pathelement location="${basedir}/app/libs/SocialSDK_QQZone_3.jar"/>
+  </path>
+  
+  <path id="library.socialsdk_sina.classpath">
+    <pathelement location="${basedir}/app/libs/SocialSDK_Sina.jar"/>
+  </path>
+  
+  <path id="library.socialsdk_weixin_1.classpath">
+    <pathelement location="${basedir}/app/libs/SocialSDK_WeiXin_1.jar"/>
+  </path>
+  
+  <path id="library.socialsdk_weixin_2.classpath">
+    <pathelement location="${basedir}/app/libs/SocialSDK_WeiXin_2.jar"/>
+  </path>
+  
+  <path id="library.support-annotations-23.1.1.classpath">
+    <pathelement location="D:/SDK/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"/>
+  </path>
+  
+  <path id="library.support-v4-23.1.1.classpath">
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/res"/>
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"/>
+    <pathelement location="${basedir}/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"/>
+  </path>
+  
+  <path id="library.umeng_social_sdk.classpath">
+    <pathelement location="${basedir}/app/libs/umeng_social_sdk.jar"/>
+  </path>
+  
+  <path id="library.universal-image-loader-1.9.5.classpath">
+    <pathelement location="${idea.home}/gradle/gradle-2.4/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"/>
+  </path>
+  
+  <path id="library.weibosdkcore_3.1.4.classpath">
+    <pathelement location="${basedir}/app/libs/weiboSDKCore_3.1.4.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/app/module_app.xml"/>
+  
+  <import file="${basedir}/module_fx.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.app, clean.module.fx" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.app, compile.module.fx" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

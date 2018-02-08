@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/new_version_dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="发现新版本1.0"
+        android:id="@+id/verson_title"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/verson_des"
+        android:textColor="#666666"
+        android:textSize="12.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="40dp"
+        android:background="#AAAAAA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:text="下次再说"
+            android:textColor="#666666"
+            android:id="@+id/version_cancel"
+            android:paddingLeft="-15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="14dp"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#AAAAAA" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:paddingRight="-15dp"
+            android:text="马上升级"
+            android:id="@+id/version_confirm"
+            android:layout_marginRight="15dp"
+            android:textColor="#b05e39"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+</LinearLayout>
